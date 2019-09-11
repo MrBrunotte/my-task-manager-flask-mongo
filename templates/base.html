@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- From: https://materializecss.com/getting-started.html -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS from: https://materializecss.com/getting-started.html -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Base</title>
+</head>
+
+<body>
+    <!--! The base.html contain our references to our JavaScript, CSS, third-party libraries that we'll use across the application.-->
+    {% block content %} {% endblock %}
+    <!-- From: https://cdnjs.com/libraries/jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript from: https://materializecss.com/getting-started.html -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/JavaScript">
+    /* task.html */
+    $(document).ready(function(){
+    $('.collapsible').collapsible();
+    /*  addtask.html*/
+    $('select').formSelect();
+    });
+    
+    /* Datepicker in addtask.html */
+    $(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
+    
+    </script>
+
+</body>
+
+</html>
